@@ -3,7 +3,7 @@ import axios from "axios";
 
 // const baseUrl = "http://localhost:8080/api/persons"
 
-const baseUrl = "https://part-3b.fly.dev/api/persons"
+const baseUrl = "https://part-3b-bitter-wave-3791-snowy-frost-665.fly.dev/api/persons"
 
 const getAll = () => {
     const request = axios.get(baseUrl)
