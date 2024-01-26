@@ -48,7 +48,7 @@ function App() {
       event.preventDefault();//remember help for no reload page
     const personObject={
       name: newName,
-      number: phnumber,
+      phone: phnumber,
       id: persons.length +1, 
     }
     PersonsService
@@ -74,7 +74,7 @@ function App() {
     } else if (window.confirm(`the ${test.name} is in our system, you want to change the number`)) {
       const personObject={
         name: newName,
-        number: phnumber
+        phone: phnumber
       }
 
       PersonsService
@@ -130,7 +130,7 @@ const toggleDeleteOf= (id)=>{
       <PersonForm addname={addName} newname={newName} readname={readName} phnumber={phnumber} readphone={readPhone} />
       <h2>Numbers</h2>
 
-      {persons.map(person => <Number key={person.id} name={person.name} phone ={person.number} toggleDelete={()=>toggleDeleteOf(person.id)}  />)}
+      {persons.map(person => <Number key={person.id} name={person.name} phone ={person.phone} toggleDelete={()=>toggleDeleteOf(person.id)}  />)}
     </div>
     
   )
